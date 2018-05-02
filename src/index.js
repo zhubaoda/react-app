@@ -1,11 +1,10 @@
 import React from 'react';
-import { render } from 'react-dom';
-import App from './App'
+import ReactDOM from 'react-dom';
+import Component from './pages/Main';
 
-const renderDom = Component => {
-    render(
-        <Component />,
-        document.getElementById('app')
-    );
-}
-renderDom(App);
+
+
+ReactDOM.render(
+	<Component />,
+	document.getElementById('app')
+)
