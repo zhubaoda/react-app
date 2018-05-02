@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import App from './App';
+import Next from './Next'
 import {
     BrowserRouter as Router,
     Link,
@@ -13,21 +15,10 @@ const Main = () => (
             <div>hahhahahhah</div>
             <hr/>
             <Route exact path="/" component={App}/>
-            <Route path="/Next" component={Next}/>
+            <Route path="/next" component={Next}/>
         </div>
     </Router>
 )
 
-const App = () => (
-    <div>
-        <h2>App页</h2>
-    </div>
-)
-
-const Next = () => (
-    <div>
-        <h2>Next页面</h2>
-    </div>
-)
 
 export default Main
